@@ -11,5 +11,7 @@ void main() {
 
   test('Should return an pokemons list', () {
     final pokemonsList = listingRepository.getPokemons();
+
+    expect(pokemonsList, isA<List<Pokemon>>());
   });
 }
