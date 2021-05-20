@@ -5,4 +5,8 @@ class RestClient {
   RestClient() {
     _client = Dio();
   }
+
+  dynamic get(String path) {
+    _client.get(path);
+  }
 }
